@@ -1,4 +1,4 @@
-/*
+/* remember border colapse
 div {
     width: 100px;
     height: 100px;
@@ -13,22 +13,36 @@ div {
     75%  {top: 50px}    
     100% {top: 100px;}
   }
+ icon background https://www.w3schools.com/css/tryit.asp?filename=trycss3_mask-image
 1vw = 14,728px
   */
 :root {
-  --Temps: 6s;
+  --Temps: 30s;
 }
 body {
-  color: #2bff00;
+  font-family: Leelawadee UI;
+  color: rgb(72, 110, 233);
   width: 100%;
   margin: 0%;
   padding: 0%;
   height: auto;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+
+  background-image: linear-gradient(
+      to left,
+      rgba(10, 10, 60, 0.2),
+      rgba(0, 0, 20, 0)
+    ),
+    url(../25805.jpg);
+
+  /*
   background-image: url(../25805.jpg);
+  */
   background-repeat: repeat;
   background-size: 100%;
+  background-attachment: fixed;
 }
 p {
   font-size: 1.5vw;
@@ -39,15 +53,26 @@ img {
 }
 h1 {
   font-size: 3vw;
+  font-family: Lucida Handwriting;
 }
 header {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 6vw;
+  height: 4vw;
   background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 0.5vw solid;
+  border-image: linear-gradient(
+      rgb(198, 0, 248, 0.5),
+      rgb(67, 19, 170),
+      rgb(0, 213, 255),
+      rgb(67, 19, 170),
+      rgb(198, 0, 248, 0.5)
+    )
+    100;
 }
 .ButtonBox {
+  font-family: Lucida Handwriting;
   border-width: 0.2vw;
   border-style: solid;
   border-image: linear-gradient(
@@ -61,7 +86,7 @@ header {
     1;
   background-color: rgb(0, 0, 0, 0.6);
   width: 20%;
-  height: 40%;
+  height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,26 +122,64 @@ h2 {
   bottom: 1.35vw;
   width: 6.78vw;
 }
-sidebar {
-  /* background-color: rgb(30,30 ,30);*/
-  width: 10%;
-  height: auto;
-  margin: 0%;
-}
-
+/*
+  sidebar {
+     background-color: rgb(30,30 ,30);
+    width: 10%;
+    height: auto;
+    margin: 0%;
+  }
+*/
 main {
-  flex-grow: 1;
-  width: 70%;
+  /*flex-grow: 1;*/
+  border-width: 0.2vw;
+  border-style: solid;
+  border-top: none;
+  border-image: linear-gradient(
+      to bottom,
+      rgb(0, 255, 166),
+      rgb(0, 109, 139),
+      rgb(50, 68, 204),
+      rgba(53, 17, 255),
+      rgba(18, 152, 255)
+    )
+    1;
+  width: 90%;
   height: auto;
   margin: 0%;
   display: flex;
   flex-wrap: wrap;
+  align-content: start;
   padding: 0vw 2vw;
-  background-color: rgb(0, 0, 0, 0.8);
+  background-color: rgb(0, 0, 0, 0.85);
 }
 .SectionA {
+  /*
   background-image: url(../backgroundA.jpg);
   background-size: cover;
+  */
+
+  border-width: 0.2vw;
+  border-style: solid;
+  border-image: linear-gradient(
+      to top,
+      rgb(0, 255, 166),
+      rgb(0, 109, 139),
+      rgb(50, 68, 204, 1),
+      rgb(53, 0, 128, 1),
+      rgb(251, 0, 255, 1)
+    )
+    1;
+
+  background-image: radial-gradient(
+    circle,
+    rgb(21, 0, 255),
+    rgba(37, 19, 170, 0.7),
+    rgb(104, 31, 150, 0),
+    rgb(198, 0, 248, 0.3),
+    rgb(0, 0, 0, 0)
+  );
+
   margin-top: 1vw;
   margin-bottom: 1vw;
   display: flex;
@@ -124,7 +187,7 @@ main {
   align-content: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 35vw;
+  height: 40vw;
   /*fade to set*/
 }
 .IconBox {
@@ -145,7 +208,7 @@ main {
   height: 1.7vw;
 }
 .test-animationA {
-  border-right: 0.33vw solid rgb(51, 255, 0);
+  border-right: 0.33vw solid rgb(41, 115, 233);
   width: 1.35vw;
   height: 2.03vw;
   display: flex;
@@ -153,7 +216,7 @@ main {
   overflow: hidden;
   max-width: fit-content;
   animation: mymove var(--Temps) infinite;
-  animation-timing-function: steps(15, jump-start);
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
 }
 .fitall {
   max-width: fit-content;
@@ -175,7 +238,7 @@ main {
 }
 .ACharlie {
   opacity: 0;
-  bottom: 6vw;
+  bottom: 6.2vw;
 
   animation: displayC var(--Temps) infinite;
   animation-timing-function: steps(1, jump-start);
@@ -272,18 +335,31 @@ main {
     opacity: 0;
   }
 }
-.SectionB {
+.Sections {
+  border-width: 0.2vw;
+  border-style: solid;
+  border-image: linear-gradient(
+      to top,
+      rgb(0, 255, 166),
+      rgb(0, 109, 139),
+      rgb(50, 68, 204, 1),
+      rgb(53, 0, 128, 1),
+      rgb(251, 0, 255, 1)
+    )
+    1;
+
+  background-image: linear-gradient(
+    to left,
+    rgb(53, 0, 128, 0.05),
+    rgb(53, 0, 128, 0.4)
+  );
+  margin: 2vw 0 2vw;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-content: space-around;
   flex-wrap: wrap;
   width: 100%;
-  height: 50vw;
-  /* background-image: linear-gradient(
-    to bottom right,
-    rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 0.1)
-  );*/
+  height: 47vw;
 }
 .gaucheB {
   width: 35%;
@@ -310,12 +386,12 @@ main {
   justify-content: center;
 }
 .bas {
-  opacity: 0.5;
+  opacity: 0.7;
   width: 25vw;
   height: 25vw;
 }
 .AboutMeBoxe {
-  border-width: 0.4vw;
+  border-width: 0.3vw;
   border-style: solid;
   border-image: linear-gradient(
       to right,
@@ -326,7 +402,7 @@ main {
       rgb(251, 0, 255)
     )
     1;
-  background-color: rgb(0, 0, 0, 0.6);
+  background-color: rgb(0, 0, 0, 0.5);
   width: 70%;
   height: 40%;
   display: flex;
@@ -336,6 +412,83 @@ main {
 .inner-box {
   width: 90%;
   height: 90%;
+}
+.CompetenceBoxe {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  border: solid;
+  border-width: 0.2vw;
+
+  border-image: linear-gradient(
+      to top,
+      rgb(0, 255, 166),
+      rgb(0, 109, 139),
+      rgb(50, 68, 204, 1),
+      rgb(53, 0, 128, 1),
+      rgb(251, 0, 255, 1)
+    )
+    1;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+#titre-Sections {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 0%;
+  width: 100%;
+  height: 10%;
+}
+.Diviser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 80%;
+}
+.IndividualCBoxe {
+  height: 95%;
+  width: 95%;
+  border: 0.2vw solid;
+  border-image: linear-gradient(
+      to top,
+      rgb(0, 204, 255),
+      rgb(0, 109, 139),
+      rgb(50, 68, 204, 1)
+    )
+    1;
+  border-style: groove;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+.SectonD-bas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  width: 100%;
+  height: 90%;
+}
+.DiviserCard {
+  width: 30%;
+  height: 40%;
+  border: 0.2vw solid;
+  border-image: linear-gradient(
+      to top,
+      rgb(0, 204, 255),
+      rgb(0, 109, 139),
+      rgb(50, 68, 204, 1)
+    )
+    1;
+  border-style: groove;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.5)
+  );
 }
 footer {
   width: 100%;
