@@ -1,5 +1,6 @@
 :root {
   --Temps: 30s;
+  --CouleurTxt: rgb(72, 110, 233);
 }
 
 body {
