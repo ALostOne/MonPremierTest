@@ -1,0 +1,21 @@
+efficient (use this one on this website)
+..place element in order that it appear
+
+
+
+Unobjective pure principle
+//principal element
+:root
+body
+header
+nav
+main
+footer
+//core element
+h2
+a
+p
+img
+h1
+// all Class and ID
+... in order of first appearance in HTML
