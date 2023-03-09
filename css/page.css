@@ -14,21 +14,17 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
-  background-image: linear-gradient(
-      to left,
-      rgba(10, 10, 60, 0.2),
-      rgba(0, 0, 20, 0)
-    ),
-    url(../backgroundB.jpg);
+  background-image: url(../backgroundB.jpg);
   background-repeat: repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
+  font-size: 1.6vw;
 }
 header {
   width: 100vw;
   height: fit-content;
   position: sticky;
+  z-index: 10000;
   top: 0;
 }
 nav {
@@ -75,10 +71,10 @@ nav {
   height: 100%;
   background-image: radial-gradient(
     circle,
-    rgb(98, 0, 255),
-    rgb(97, 19, 170),
-    rgb(104, 31, 150),
-    rgb(198, 0, 248, 0.5),
+    rgb(25, 0, 255),
+    rgb(19, 44, 170),
+    rgb(31, 77, 150),
+    rgba(0, 141, 248, 0.5),
     rgb(0, 0, 0, 0)
   );
 }
@@ -86,6 +82,11 @@ nav {
 h2 {
   max-width: fit-content;
   font-size: 1.49vw;
+}
+h3 {
+  text-shadow: 0 0 2vw var(--ShadowBlur);
+  font-size: 1.5vw;
+  font-family: Lucida Handwriting;
 }
 a {
   display: flex;
@@ -139,7 +140,7 @@ main {
   padding: 0vw 2vw;
   background-color: rgb(0, 0, 0, 0.85);
 }
-.SectionA {
+.section_a {
   border-width: 0.2vw;
   border-style: solid;
   border-image: linear-gradient(
@@ -157,7 +158,7 @@ main {
     rgb(21, 0, 255),
     rgba(37, 19, 170, 0.7),
     rgb(104, 31, 150, 0),
-    rgb(198, 0, 248, 0.3),
+    rgba(0, 165, 248, 0.3),
     rgb(0, 0, 0, 0)
   );
 
@@ -171,7 +172,7 @@ main {
   height: 40vw;
   /*fade to set*/
 }
-.IconBox {
+.avatar_box {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -183,7 +184,9 @@ main {
   justify-content: center;
   width: 100%;
   height: fit-content;
+  align-items: center;
 }
+
 .Content-animation {
   width: 20vw;
   height: 1.7vw;
@@ -203,16 +206,18 @@ main {
   max-width: fit-content;
   position: relative;
   bottom: 1.35vw;
+  z-index: 1;
 }
 .AALPHA {
   opacity: 1;
   left: 0.203vw;
   animation: displayA var(--Temps) infinite;
   animation-timing-function: steps(1, jump-start);
+  bottom: 0.1vw;
 }
 .ABravo {
   opacity: 0;
-  bottom: 3.1vw;
+  bottom: 3.4vw;
   left: 0.2vw;
   animation: displayB var(--Temps) infinite;
   animation-timing-function: steps(1, jump-start);
@@ -315,7 +320,7 @@ main {
     opacity: 0;
   }
 }
-.Sections {
+.sections {
   border-width: 0.2vw;
   border-style: solid;
   border-image: linear-gradient(
@@ -342,7 +347,7 @@ main {
   height: 43vw;
 }
 
-.gaucheB {
+.gauche_b {
   width: 35%;
   height: 100%;
   display: flex;
@@ -350,15 +355,15 @@ main {
   align-content: center;
   flex-wrap: wrap;
 }
-.titre-sectionB {
+/*.titre_section_b {
   display: flex;
   justify-content: center;
   width: 100%;
   height: auto;
   margin: 0;
   padding: 0;
-}
-.droiteB {
+}*/
+.droite_b {
   margin-top: 10%;
   width: 60%;
   height: auto;
@@ -392,46 +397,35 @@ main {
   padding: 10%;
 }
 .inner-box {
+  display: flex;
+  align-items: center;
   width: 90%;
   height: 90%;
 }
 p {
   font-size: 1.5vw;
 }
-.CompetenceBoxe {
-  display: flex;
-  width: 90%;
-  height: 90%;
-  border: solid;
-  border-width: 0.2vw;
 
-  border-image: linear-gradient(
-      to top,
-      rgb(0, 255, 166),
-      rgb(0, 109, 139),
-      rgb(50, 68, 204, 1),
-      rgb(53, 0, 128, 1),
-      rgb(251, 0, 255, 1)
-    )
-    1;
-  background-color: rgb(0, 0, 0, 0.4);
-}
-.titre-Sections {
+.titre_sections {
   display: flex;
   align-content: center;
   justify-content: center;
   margin: 0%;
   width: 100%;
-  height: 10%;
+  height: 15%;
 }
-.Diviser {
+.diviser {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 30%;
   height: 80%;
 }
-.IndividualCBoxe {
+.individual_c_boxe {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
   height: 95%;
   width: 95%;
   border: 0.2vw solid;
@@ -449,13 +443,42 @@ p {
     rgba(0, 0, 0, 0.6)
   );
 }
-.SectonD-bas {
+.icon_competence {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description_c {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+dt {
+  margin-bottom: 1vw;
+}
+.contain_point {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  background-color: rgb(0, 0, 0, 0.3);
+}
+.point {
+  white-space: nowrap;
+  text-align: left;
+  width: 40%;
+  font-size: 1.2vw;
+}
+.secton_d_bas {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-content: space-evenly;
   width: 100%;
-  height: 90%;
+  height: 80%;
   margin: 0;
   padding: 0;
 }
@@ -477,6 +500,48 @@ p {
     rgba(0, 0, 0, 0.25),
     rgba(0, 0, 0, 0.6)
   );
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+  height: 20vw;
+}
+.titre_contact {
+  height: 20%;
+}
+.contient_contact {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 80%;
+}
+.link_contact {
+  width: fit-content;
+  height: auto;
+}
+.fa {
+  background-image: radial-gradient(
+    circle,
+    rgb(0, 0, 0, 1),
+    rgb(0, 0, 0, 1),
+    rgb(0, 0, 0, 1)
+  );
+  border-radius: 50%;
+  font-size: 4vw;
+  text-shadow: 0 0 3vw var(--ShadowBlur);
+  transition: text-shadow 0.5s, background-image 2s;
+  box-shadow: 0 0 1vw var(--ShadowBlur);
+}
+.fa:hover {
+  background-image: radial-gradient(
+    circle,
+    rgb(0, 60, 255, 0.8),
+    rgb(0, 60, 255, 0.5),
+    rgb(0, 60, 255, 0.2),
+    rgb(0, 60, 255, 0.1)
+  );
+  box-shadow: 0 0 5vw var(--ShadowBlur);
+  text-shadow: 0 0 10vw rgb(125, 200, 255);
 }
 footer {
   background: linear-gradient(
