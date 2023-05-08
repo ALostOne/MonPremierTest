@@ -65,7 +65,7 @@ nav {
   justify-content: center;
   align-items: center;
 }
-.Menu {
+.menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -181,7 +181,7 @@ main {
   width: 100%;
   height: 40%;
 }
-.Mon-Nom {
+.mon_nom {
   color: #b4d1ff;
   display: flex;
   justify-content: center;
@@ -193,10 +193,12 @@ main {
   position: absolute;
   top: 30.5vw;
 }
+
 .Content-animation {
   width: 20vw;
   height: 1.7vw;
 }
+
 .test-animationA {
   border-right: 0.33vw solid VAR(--CouleurTxt);
   width: 1.35vw;
@@ -395,19 +397,16 @@ main {
     )
     1;
   background-color: rgb(0, 0, 0, 0.5);
-  width: 80%;
-  height: 45%;
+  width: 70%;
+  height: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5%;
-}
-.inner-box {
-  display: flex;
   align-items: center;
-  width: 90%;
-  height: 90%;
+  padding: 10%;
 }
+
 .about_me_link {
   display: flex;
   justify-content: center;
@@ -489,7 +488,7 @@ dt {
   width: 40%;
   font-size: 1.2vw;
 }
-.secton_d_bas {
+.section_d_bas {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
