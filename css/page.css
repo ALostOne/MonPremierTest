@@ -183,14 +183,11 @@ main {
 .mon-nom {
   color: #b4d1ff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   height: fit-content;
   align-items: center;
-}
-.qualificatif-nom {
-  position: absolute;
-  top: 30.5vw;
 }
 
 .sections {
@@ -229,7 +226,7 @@ main {
   flex-wrap: wrap;
 }
 
-.droite_b {
+.droite-b {
   width: 60%;
   height: 100%;
   display: flex;
@@ -345,13 +342,13 @@ dt {
   padding: 0;
   background-color: rgb(0, 0, 0, 0.3);
 }
-.point {
+.contient-point > li {
   white-space: nowrap;
   text-align: left;
   width: 40%;
   font-size: 1.2vw;
 }
-.section_d_bas {
+.section-d-bas {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -361,7 +358,7 @@ dt {
   margin: 0;
   padding: 0;
 }
-.carte {
+.section-d-bas > li {
   margin: 0;
   list-style-type: none;
   width: 30%;
@@ -381,7 +378,7 @@ dt {
     rgba(0, 0, 0, 0.6)
   );
 }
-.carte > p {
+.section-d-bas > li > p {
   margin: 0;
   padding: 10%;
   padding-bottom: 0%;
@@ -419,6 +416,7 @@ dt {
   grid-area: header;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   background-color: rgb(0, 0, 0, 0.5);
 }
 .formation {
