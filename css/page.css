@@ -49,6 +49,28 @@ nav {
   z-index: 10000;
   top: 0;
 }
+main {
+  border-width: 0.2vw;
+  border-style: solid;
+  border-top: none;
+  border-image: linear-gradient(
+      to bottom,
+      rgb(0, 255, 166),
+      rgb(0, 109, 139),
+      rgb(50, 68, 204),
+      rgba(53, 17, 255),
+      rgba(18, 152, 255)
+    )
+    1;
+  width: 90%;
+  height: auto;
+  margin: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  padding: 0vw 2vw;
+  background-color: rgb(0, 0, 0, 0.85);
+}
 section {
   border-width: 0.2vw;
   border-style: solid;
@@ -147,28 +169,6 @@ img {
   padding: 0;
 }
 
-main {
-  border-width: 0.2vw;
-  border-style: solid;
-  border-top: none;
-  border-image: linear-gradient(
-      to bottom,
-      rgb(0, 255, 166),
-      rgb(0, 109, 139),
-      rgb(50, 68, 204),
-      rgba(53, 17, 255),
-      rgba(18, 152, 255)
-    )
-    1;
-  width: 90%;
-  height: auto;
-  margin: 0%;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: start;
-  padding: 0vw 2vw;
-  background-color: rgb(0, 0, 0, 0.85);
-}
 .section-a {
   border-width: 0.2vw;
   border-style: solid;
