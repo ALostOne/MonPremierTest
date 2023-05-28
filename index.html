@@ -2,22 +2,19 @@
 <html>
     <head>
         <link href="css/page.css" rel="stylesheet">
-        
         <script src="js/general.js"></script>
         <script src="https://kit.fontawesome.com/6a81225404.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <header>
-            <h2>Webfolio</h2>
-        </header>
+
         <nav>
-            <div class="menu">
-                <div class="boite-bouton"><a href="#moi"><h2>À propos de moi</h2></a></div>
-                <div class="boite-bouton"><a href="#competence"><h2>Compétences</h2></a></div>
-                <div class="boite-bouton"><a href="#projets"><h2>Projets</h2></a></div>
-                <div class="boite-bouton"><a href="#Contact"><h2>Contact</h2></a></div>
-            </div>
+            <ul class="menu">
+                <li class="boite-bouton"><a href="#moi"><h2>À propos de moi</h2></a></li>
+                <li class="boite-bouton"><a href="#competence"><h2>Compétences</h2></a></li>
+                <li class="boite-bouton"><a href="#projets"><h2>Projets</h2></a></li>
+                <li class="boite-bouton"><a href="#Contact"><h2>Contact</h2></a></li>
+            </ul>
         </nav>
         <main>
             <section class="section-a">
@@ -31,7 +28,7 @@
                 <div class="titre-sections">
                 </div>
             </section>
-            <!---->
+
             <section class="sections"id="moi">
                 <div class="gauche-b"><h1 class="titre-section_b">À propos de moi</h1>
                     <img class="bas" src="perdu_sunglasses.png">
@@ -50,7 +47,7 @@
                 </div>
                 
             </section>
-            <!--C-->
+        
             <section class="sections" id="competence">
                 <div class="titre-sections"><h1>Mes Compétences</h1></div>
                 <div class="diviser">
@@ -103,60 +100,79 @@
                     </div>
                 </div>
             </section>
-            <!-- -->
+            
             <section class="sections"id="projets">
                 <div class="titre-sections"><H1>Mes projets</H1></div>
                 <ul class="section_d_bas">
                     <li class="carte">
                         <a class="lien-contact" href="https://unity.com/fr">
-                            <i class="icone-static fa-brands fa-unity"></i>
+                            <i class="fa fa-brands fa-unity"></i>
                             <h2>Développement 2D sur Unity</h2>
                         </a>
+                        <p>
+                            Programation à loisir de petit projets de jeux sur unity en C#
+                        </p>
                     </li>
                     <li class="carte">
                         <a class="lien-contact" href="https://www.unrealengine.com/fr">
-                            <i class="icone-static fa-solid fa-cube"> </i>
+                            <i class="fa fa-solid fa-cube"> </i>
                             <h2>Développement 3D sur Unreal5</h2>
                         </a>
+                        <p>
+                            Programation à loisir de petit projets de jeux sur Unreal5 en C++
+                        </p>
                     </li>
                     <li class="carte">
                         <a class="lien-contact" href="https://dev.streamelements.com/docs/widgets/ec99002224803-code-editor">
-                            <i class="icone-static fa-brands fa-github"></i>
+                            <i class="fa fa-brands fa-github"></i>
                             <h2>Développement Twitch widget</h2>
                         </a>
+                        <p>
+                            Programation à loisir d'élément pour la difusion en direct dans avec "Stream Elements" en HTML/CSS/JS 
+                        </p>
+                    </li>
                     <li class="carte">
                         <a class="lien-contact" href="https://www.autodesk.ca/fr/products/fusion-360/overview">
-                             <i class="icone-static fa-solid fa-cube"></i>
+                            <i class="fa fa-solid fa-cube"></i>
                             <h2>Modelisation 3D sur Fusion</h2>
                         </a>
+                        <p>
+                            Modelisation 3D délément utilisable par les "Game Engine" comme Unity et Unreal
+                        </p>
                     </li>
                     <li class="carte">
                         <a class="lien-contact" href="https://libresprite.github.io/#!/">
-                            <i class="icone-static fa-solid fa-cube"></i>
+                            <i class="fa fa-solid fa-cube"></i>
                             <h2>Conception de Sprite de Jeux</h2>
                         </a>
+                        <p>
+                            Modelisation 2D délément utilisable par les "Game Engine" comme Unity et Unreal
+                        </p>
                     </li>
                     <li class="carte">
                         <a class="lien-contact" href="https://wiki.fabbulle.tech/index.php/Accueil">
-                            <i class="icone-static fa-solid fa-cube"></i>
+                            <i class="fa fa-solid fa-cube"></i>
                             <h2>Création de tutoriels Youtube</h2>
                         </a>
+                        <p>
+                            Création de tutoriel Youtube pour l'utilisation de technologie en Fablab
+                        </p>
                     </li>
                 </ul>
             </section>
-            <!-- -->
+          
             <section class="sections">
                 <div class="titre-sections"><h1>Mes Implications</h1></div>
                 <div class="grid-container">
                     <div class="fabbulle"><h1>Formateur a un Fablab Éléctronique et robotique</h1></div>
                     <div class="formation"><h1>Fabbulle</h1></div>
-                    <div class="decoupeuse-laser"></div>
-                    <div class="imprimante-fdm"></div>
-                    <div class="modelisation"></div>
-                    <div class="eveil-tech"></div>
+                    <div class="decoupeuse-laser"><h2>Formateur à la découpeuse laser</h2></div>
+                    <div class="imprimante-fdm"><h2>Formateur à l'imprimante 3D</h2></div>
+                    <div class="modelisation"><h2>Formateur à la modelisation 3D</h2></div>
+                    <div class="eveil-tech"><h3>liste de formation volontaire de la clientèle du Fabbulle <br> de RDL</h3></div>
                 </div>
             </section>
-            <!-- -->
+           
             <section class="sections contact" id="Contact">
                 <div class="titre-sections titre_contact"><h1>Contacts</h1></div>
                 <div class="contient-contact ">
