@@ -16,12 +16,17 @@
             <div class="scene">
                 <div class="cube">
                 <div class="cube__face cube__devant">
-                    <h2>Contactez-moi</h2>
-                    <p>Entrez vos coordonnées et votre offre, je vous recontacterai rapidement.</p>
+                    
                     <form action="/action_page.php">
+                    <h2>Contactez-moi</h2>
+                    <p>Entrez votre offre, je vous recontacterai rapidement.</p>
+                    <label for="nom"><b>Nom de représentant</b></label>
+                    <input type="text" placeholder="Votre Nom" name="nom" id="nom" required>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Votre Email" name="email" id="email" required>
                         <textarea name="message" rows="10" cols="50"></textarea>
                         <br><br>
-                        <input type="submit">
+                    <input type="submit">
                     </form>
 
                 </div>
